@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
-from models import TextClassificationInput
-from classifier_factory import ClassifierFactory
+from models.models import TextClassificationInput
+from classifier.classifier_factory import ClassifierFactory, categories
 
 router = APIRouter()
 
@@ -14,3 +14,7 @@ async def classify_text(item: TextClassificationInput):
     classifier = ClassifierFactory.create_classifier()
     response = classifier.classify(item.title)
     return response
+
+@router.get("/")
+async def read_root():
+    return categories

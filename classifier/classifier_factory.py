@@ -1,4 +1,4 @@
-from classifiers import NaiveBayesClassifier
+from classifier.classifiers import NaiveBayesClassifier
 
 words = [
     "Technology: Computer, Internet, Smartphone, Software, Hardware, Code, Algorithm, Programming, Data, Artificial Intelligence (AI), Machine Learning, Virtual Reality (VR), Augmented Reality (AR), Cybersecurity, Cloud Computing, Automation, Robotics, Blockchain, 3D Printing, Nanotechnology, Internet of Things (IoT), Big Data, Wi-Fi, Social Media, Encryption, Biotechnology, Quantum Computing, GPS (Global Positioning System), Mobile Apps, Wearable Technology, Nanorobotics, Cryptocurrency, Data Science, Holography, Network Security, Quantum Cryptography, Silicon Valley, Drone Technology, Information Technology, Augmented Virtuality, Silicon Chips, Tech Startup, Internet Protocol, User Interface (UI), User Experience (UX), Data Visualization, Cyber Threats, Quantum Encryption, Tech Innovations, Machine Vision, Tech Gadgets, High-Performance Computing, Telecommunications, Firmware, Autonomous Systems, Biometric Authentication, Green Technology, Internet Infrastructure, Semiconductor Industry, Open Source Software, SQL, Database.",
@@ -18,6 +18,8 @@ words = [
     "Health & Fitness: Exercise, Nutrition, Wellness, Cardiovascular, Strength training, Yoga, Meditation, Healthy eating, Weightlifting, Aerobics, Diet, Mental health, Physical activity, Bodyweight exercises, Calisthenics, Gym, Running, Swimming, Cycling, Flexibility, Hydration, Muscle mass, Rest and recovery, Weight management, Health goals, Personal trainer, Health tracking, Supplements, Well-being, Holistic health, Medicine, Fitness Regimen, Crossfit, Pilates, Functional Training, Body Composition, Endurance, Sports Nutrition, Mind-Body Connection, Balanced Diet, Strength Conditioning, HIIT (High-Intensity Interval Training), Wellness Retreat, Body Transformation, Outdoor Activities, Flexibility Training, Sports Psychology, Recovery Techniques, Mindful Eating, Holistic Healing, Physical Therapy, Lifestyle Medicine, Wellness Coaching, Biohacking, Wellness Programs, Active Lifestyle, Dietary Supplements, Energy Balance, Mental Resilience, Recovery Strategies, Integrative Health.",
 
     "Lifestyle: Habits, Choices, Routine, Culture, Preferences, Hobbies, Socializing, Leisure, Well-being, Fashion, Trends, Diet, Entertainment, Travel, Relaxation, Work-life balance, Family, Relationships, Self-care, Stress management, Personal growth, Simplicity, Mindfulness, Sustainable living, Adventure, Luxury, Minimalism, Health-consciousness, Frugality, Personal expression, Behavior, Traditions, Regimen, Lifestyle Trends, Leisure Activities, Social Engagement, Recreational Pursuits, Cultural Experiences, Well-being Practices, Fashion Styles, Cultural Diversity, Gastronomy, Cultural Exploration, Entertainment Options, Travel Destinations, Relaxation Techniques, Balance in Life, Family Dynamics, Interpersonal Bonds, Self-fulfillment, Clarity of Mind, Eco-friendly Living, Adventurous Spirit, Luxurious Experiences, Simplified Living, Mindful Awareness, Sustainable Choices, Thrilling Journeys, Opulence, Frugal Living, Youtube, Managment"
+
+    
 ]
 
 categories = [
@@ -30,6 +32,7 @@ categories = [
     "Personal Development",
     "Health & Fitness",
     "Lifestyle"
+
 ]
 
 class ClassifierFactory:
